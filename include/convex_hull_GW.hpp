@@ -10,6 +10,7 @@
 #define BOOST_GEOMETRY_ALGORITHMS_CONVEX_HULL_GW_HPP
 
 #include <boost/geometry/algorithms/append.hpp>
+#include <boost/geometry/algorithms/equals.hpp>
 
 #include <boost/geometry/arithmetic/cross_product.hpp>
 
@@ -114,6 +115,10 @@ static inline void convex_hull_GW(multipoint mp, output& ch)
 
 	int x, y, start;	
 	typedef typename boost::range_size<multipoint>::type s_type;
+	typedef typename boost::range_value<multipoint>::type pt;
+    	typedef boost::geometry::less<pt> comparator;
+
+	std::sort(boost::begin(mp), boost::end(mp), comparator());
 
 	s_type size = boost::size(mp);
 	
