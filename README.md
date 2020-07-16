@@ -1,5 +1,4 @@
 # Boost-Geometry_Competency_Test
-This is part of the Gsoc '20 requirements for Boost::Geometry
 
 I've created three files :-
 1. `convex_hull_GW.hpp` present in the folder `includes` - implements the Gift Wrapping Algorithm
