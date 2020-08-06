@@ -1,4 +1,4 @@
-# Boost-Geometry_Conve_Hull
+# Boost-Geometry_Convex_Hull
 
 I've created three files :-
 1. `convex_hull_GW.hpp` present in the folder `includes` - implements the Gift Wrapping Algorithm
